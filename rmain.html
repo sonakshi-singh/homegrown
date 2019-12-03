@@ -128,7 +128,7 @@ ion-icon {
 /* have to add media screen for footer li and question*/
 
 
-div #module
+div #question
 {   
    
     width: 40%;
@@ -157,23 +157,7 @@ width: 40%;
 }
 
 
-#module p.collapse[aria-expanded="false"] {
-    display: block;
-    height: 40px !important;
-    overflow: hidden;
-}
 
-#module p.collapsing[aria-expanded="false"] {
-    height: 40px !important;
-}
-
-#module a.collapsed:after  {
-    content: '+ Show More';
-}
-
-#module a:not(.collapsed):after {
-    content: '- Show Less';
-}
 </style>
 
 
@@ -223,26 +207,31 @@ width: 40%;
 <br><br>
  <button type="submit" class="btn btn-primary"><a href="rmain.html">Submit</a></button>
 
- <div id="module" class="container">
+ <div id="question">
 
 
   <h2> Question</h2>
-  <p class="collapse" id="collapseExample" aria-expanded="false">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices ligula velit. Maecenas cursus enim in purus vestibulum condimentum. Sed quis vehicula sem. Nam sit amet dui arcu. Cras sapien nunc, commodo in tincidunt eu, pretium sit amet libero. Duis scelerisque justo at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis.usto at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis. </p>
+ <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+ <div id="demo" class="collapse">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              </div>
 
-  <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-</a>
+  
 
   </div>
 
-  <div id= "module" class="container">
+  <div id= "question">
   <h2>Question</h2>
-  <p class="collapse" id="collapseExample" aria-expanded="false">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices ligula velit. Maecenas cursus enim in purus vestibulum condimentum. Sed quis vehicula sem. Nam sit amet dui arcu. Cras sapien nunc, commodo in tincidunt eu, pretium sit amet libero. Duis scelerisque justo at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis.usto at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis.
-  </p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+ <div id="demo" class="collapse">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              </div>
 
-   <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-   </a>
+   
     
 
   </div>

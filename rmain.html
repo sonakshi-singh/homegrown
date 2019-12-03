@@ -159,6 +159,29 @@ margin-left: 30%;
 width: 40%;
 
 }
+
+
+#question {
+  width: 500px;
+}
+
+#question p.collapse[aria-expanded="false"] {
+    display: block;
+    height: 40px !important;
+    overflow: hidden;
+}
+
+#question p.collapsing[aria-expanded="false"] {
+    height: 40px !important;
+}
+
+#question a.collapsed:after  {
+    content: '+ Show More';
+}
+
+#question a:not(.collapsed):after {
+    content: '- Show Less';
+}
 </style>
 
 

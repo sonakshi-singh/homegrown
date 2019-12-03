@@ -8,11 +8,13 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
-
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -97,7 +99,7 @@ ion-icon {
   text-align: right;
 }
 .footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -132,16 +134,23 @@ ion-icon {
 /* have to add media screen for footer li and question*/
 
 
-div #question
+div #module
 {   
    
     width: 40%;
-  padding: 10px;
-  border: 5px solid #0093BC;
-  margin-left: 30%;
-overflow: scroll;
-  text-align: center;
-
+margin-left: 30%;
+text-align: center;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  border-color: #0093bc;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+ 
 
 }
 
@@ -151,6 +160,25 @@ overflow: scroll;
 margin-left: 30%;
 width: 40%;
 
+}
+
+
+#module p.collapse[aria-expanded="false"] {
+    display: block;
+    height: 40px !important;
+    overflow: hidden;
+}
+
+#module p.collapsing[aria-expanded="false"] {
+    height: 40px !important;
+}
+
+#module a.collapsed:after  {
+    content: '+ Show More';
+}
+
+#module a:not(.collapsed):after {
+    content: '- Show Less';
 }
 </style>
 
@@ -201,21 +229,31 @@ width: 40%;
 <br><br>
  <button type="submit" class="btn btn-primary"><a href="rmain.html">Submit</a></button>
 
- <div id="question">
+ <div id="module" class="container">
+
+
   <h2> Question</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices ligula velit. Maecenas cursus enim in purus vestibulum condimentum. Sed quis vehicula sem. Nam sit amet dui arcu. Cras sapien nunc, commodo in tincidunt eu, pretium sit amet libero. Duis scelerisque justo at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis. </p>
+  <p class="collapse" id="collapseExample" aria-expanded="false">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices ligula velit. Maecenas cursus enim in purus vestibulum condimentum. Sed quis vehicula sem. Nam sit amet dui arcu. Cras sapien nunc, commodo in tincidunt eu, pretium sit amet libero. Duis scelerisque justo at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis.usto at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis. </p>
+
+  <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+</a>
+
   </div>
 
-  <div id= "question">
+  <div id= "module" class="container">
   <h2>Question</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices ligula velit. Maecenas cursus enim in purus vestibulum condimentum. Sed quis vehicula sem. Nam sit amet dui arcu. Cras sapien nunc, commodo in tincidunt eu, pretium sit amet libero. Duis scelerisque justo at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis.</p>
+  <p class="collapse" id="collapseExample" aria-expanded="false">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices ligula velit. Maecenas cursus enim in purus vestibulum condimentum. Sed quis vehicula sem. Nam sit amet dui arcu. Cras sapien nunc, commodo in tincidunt eu, pretium sit amet libero. Duis scelerisque justo at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis.usto at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis.
+  </p>
+
+   <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+</a>
     
 
   </div>
 
- </div>
-
-</div>
+ 
  
 
 

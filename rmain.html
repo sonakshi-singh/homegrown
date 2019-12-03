@@ -27,7 +27,7 @@
 .container-fluid{
   width: 100%;
   margin:auto;
- overflow: scroll;
+ 
   padding: 0;
   position: relative;
 }
@@ -50,6 +50,7 @@ textarea{
   text-align: center;
 font-size: 30px;
 overflow: scroll;
+margin-top: 50px;
 
 }
 .topnav {
@@ -148,9 +149,30 @@ text-align: center;
 
 }
 
+div #question1
+{   
+   
+    width: 40%;
+margin-left: 30%;
+text-align: center;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  border-color: #0093bc;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  margin-bottom: 120px;
+ 
+
+}
+
 .btn-primary #submit
 {
-background-color:blue;
+
 margin-left: 30%;
 width: 40%;
 
@@ -160,7 +182,7 @@ width: 40%;
   border-color: white;
   color: black;
   text-align: center;
-  margin-left: 10%;
+  
   
 }
 
@@ -221,7 +243,7 @@ border-color: white;}
 
   <textarea name="ask" placeholder="What's your question?"></textarea>
 <br><br>
- <button type="submit" class="btn btn-primary" id="submit" style="margin-left: 30%;"><a href="rmain.html">Submit</a></button>
+ <button type="submit" class="btn btn-primary" id="submit" style="margin-left: 30%; width: 40%; background-color:#0093BC ;"><a href="rmain.html">Submit</a></button>
 
  <div id="question">
 
@@ -238,7 +260,7 @@ border-color: white;}
 
   </div>
 
-  <div id= "question">
+  <div id= "question1">
   <h2>Question</h2>
   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
  <div id="demo1" class="collapse">

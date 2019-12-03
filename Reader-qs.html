@@ -95,9 +95,7 @@ button {
   color: #f3b61f;
 }
 
-.btn-info {
-	background-color: #233d4d;
-	border-color: #233d4d;
+
 }
 body {
   background-color:  white;
@@ -116,7 +114,25 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
+  padding-right: 15px;
  
+}
+
+
+
+#box2 {
+  text-align: center;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  border-color: #0093bc;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #box3 {
@@ -131,20 +147,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
-}
-
-#box2 {
-  text-align: center;
-  background-color: white;
-  color: black;
-  margin-top: 10px;
-  border-color: #0093bc;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px 5px; 
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #answered {
@@ -178,11 +181,29 @@ body {
 
 h6 {
 	color: grey;
+  
 }
 
-h6:hover {
-	color: blue;
+h8 {
+
 }
+
+.btn-primary {
+  background-color: white;
+  border-color: white;
+  color: black;
+  
+}
+
+.btn-primary:hover { 
+background-color: white;
+color:black; 
+border-color: white;}
+
+#demo,#demo1,#demo2 {
+  text-align: left;
+}
+
 </style>
 
 
@@ -205,21 +226,43 @@ h6:hover {
                 </div>
             </div>
             <div id="box1">
-              <a href="google.com"><h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8></a>
+              <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+              <div id="demo" class="collapse">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              </div>
+            </br>
               <p id="answered">Answered</p>
              
             </div>
 
             <div id="box2">
-              <a href="google.com"><h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8></a>
+               <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+               <div id="demo1" class="collapse">
+                <ul>
+                  <p><b>December 1, 2019</b></p>
+                  <li>5:00 p.m. - Question posted</li>
+                </br>
+                  <p><b>December 2, 2019</b></p>
+                  <li>8:00 a.m. - Your question was picked up by Andrew </li>
+                  <li>10:00 a.m. - Andrew called an authority for an interview. 
+                  <li>12:00 p.m. - Andrew visited the site and took some photos</li>
+               </div>
               <div id="in-progress">
               	<p>In Progress</p>
               </div>
             </div>
             <div id="box3">
-              <a href="google.com"><h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8></a>
-              <p id="unassigned">Unassigned</p>
+              <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8>
+              </button>
+              <div id="demo2" class="collapse">
+                <ul>
+                  <p><b>December 5, 2019</b></p>
+                  <li>5:00 p.m. - Question posted</li>
+                </ul>
             </div>
+            <p id="unassigned">Unassigned</p>
           </div>
           <div id="item1"></div>
           <div id="item2"></div>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>main</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  
+<style type="text/css">
+  
+.container-fluid{
+  width: 100%;
+  margin:auto;
+ overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+header{
+  color: #0093BC;
+   overflow:hidden;
+ min-height: 50%;
+ width:100%;
+
+
+}
+
+textarea{
+  
+  height: 20%;
+  width: 40%;
+  padding: 10px;
+ 
+  margin-left: 30%;
+  text-align: center;
+font-size: 30px;
+overflow: scroll;
+
+}
+.topnav {
+  overflow: hidden;
+  background-color: #0093BC;
+  position: relative; 
+   border-bottom: solid black;
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  text-align: right;
+}
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+/* Style the user account menu */
+.topnav a.icon {
+  float: right;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  
+  color: black;
+}
+ion-icon {
+  
+  float: right;
+}
+.dropbtn
+{
+  text-align: right;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0093BC;
+  color: white;
+  text-align: left;
+  min-height: 10%;
+
+}
+
+.footer li
+{ list-style-type: none;
+  display: inline-block;
+  padding-right: 30%;
+  padding-top: 10px;
+  
+
+
+  
+}
+
+.dropbtn #agg
+{ margin: 100px;
+ 
+
+
+
+
+}
+.footer ul{padding-left: 20%;}
+
+/* have to add media screen for footer li and question*/
+
+
+div #question
+{   
+   
+    width: 40%;
+  padding: 10px;
+  border: 5px solid #0093BC;
+  margin-left: 30%;
+overflow: scroll;
+  text-align: center;
+
+
+}
+</style>
+
+
+
+
+
+<script type="text/javascript">
+  
+  function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+</head>
+<body>
+<div class="container-fluid">
+<header>
+
+<div class="topnav">
+ <a href="#home" class="active"></a>
+
+  <!-- / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="dropbtn" onclick="myFunction()">
+   <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+  </a>
+  <div class="dropdown">
+<div class="dropdown-content">
+  <!-- Navigation links (hidden by default) -->
+  
+  <div id="myLinks">
+    <a href="#about">ABOUT</a>
+    <a href="#stats">STATS</a>
+ 
+  </div>
+  </div>
+  </div>
+</div>
+</header>
+
+  <textarea name="ask" placeholder="What's your question?"></textarea>
+
+  <div class="dropdown">
+
+   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="text-align: center;margin-left:35%;" id="agg">National news
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">CNN</a></li>
+    <li><a href="#">NYT</a></li>
+    <li><a href="#">BBC</a></li>
+  </ul>
+
+
+  </div>
+
+ <div id="question">
+  <h2> Question</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices ligula velit. Maecenas cursus enim in purus vestibulum condimentum. Sed quis vehicula sem. Nam sit amet dui arcu. Cras sapien nunc, commodo in tincidunt eu, pretium sit amet libero. Duis scelerisque justo at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis. </p>
+  </div>
+
+  <div id= "question">
+  <h2>Question</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices ligula velit. Maecenas cursus enim in purus vestibulum condimentum. Sed quis vehicula sem. Nam sit amet dui arcu. Cras sapien nunc, commodo in tincidunt eu, pretium sit amet libero. Duis scelerisque justo at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis.</p>
+    
+
+  </div>
+
+ </div>
+
+</div>
+ 
+
+
+<div class="footer">
+  <ul>
+
+ <li><i class="fa fa-home fa-2x" id="house" aria-hidden="true"><a href=""> </a> </i></li>
+ <li><i class="fa fa-pencil-square-o fa-2x" id="pencil" aria-hidden="true"><a href=""></a></i></li>
+ <li><i class="fa fa-bell fa-2x" id="bell" aria-hidden="true"> <a href=""> </a> </i></li>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

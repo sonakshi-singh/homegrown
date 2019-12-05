@@ -21,7 +21,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  
+   
 <style type="text/css">
   
 .container-fluid{
@@ -129,7 +129,7 @@ ion-icon {
 /* have to add media screen for footer li and question*/
 
 
-div #question
+div #question 
 {   
    
     width: 40%;
@@ -143,13 +143,14 @@ text-align: center;
   border-width: 1px;
   border-radius: 5px 5px; 
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   padding-left: 15px;
+
  
 
 }
 
-div #question1
+div #question1 
 {   
    
     width: 40%;
@@ -163,9 +164,49 @@ text-align: center;
   border-width: 1px;
   border-radius: 5px 5px; 
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   padding-left: 15px;
-  margin-bottom: 120px;
+ 
+ 
+
+}
+
+div #question2 
+{
+ width: 40%;
+margin-left: 30%;
+text-align: center;
+  background-color: white ;
+  color: black;
+  margin-top: 10px;
+  border-color:red;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  
+ 
+
+}
+
+div #question3 
+{
+ width: 40%;
+margin-left: 30%;
+text-align: center;
+  background-color: white ;
+  color: black;
+  margin-top: 10px;
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  margin-bottom: 130px;
  
 
 }
@@ -196,7 +237,73 @@ border-color: white;}
 }
 
 
+
+
+
+#count {
+ 
+ 
+  
+  font-size: 10px;
+  float: left;
+  
+  
+}
+#count1 {
+  
+  
+ 
+
+  font-size: 10px;
+  float: left;
+  
+  
+}
+#count2 {
+  
+  
+ 
+
+  font-size: 10px;
+  float: left;
+  
+  
+}
+#count3 {
+  
+  
+ 
+
+  font-size: 10px;
+  float: left;
+  
+  
+}
+
+
+
+ 
+
+
+
+#plus {
+  float: left;
+ 
+}
+#plus1{
+ float: left;
+
+}
+#plus2{
+ float: left;
+
+}
+#plus3{
+ float: left;
+
+}
 </style>
+
 
 
 
@@ -212,6 +319,48 @@ border-color: white;}
     x.style.display = "block";
   }
 }
+
+$(function(){
+var counter = 100;
+
+$("#plus").click(function(){
+  counter++;
+  $("#count").text(counter);
+});
+});
+
+$(function(){
+var counter1 = 50;
+
+$("#plus1").click(function(){
+  counter1++;
+  $("#count1").text(counter1);
+});
+});
+
+$(function(){
+var counter2 = 20;
+
+$("#plus2").click(function(){
+  counter2++;
+  $("#count2").text(counter2);
+});
+});
+
+$(function(){
+var counter3 =10 ;
+
+$("#plus3").click(function(){
+  counter3++;
+  $("#count3").text(counter3);
+});
+});
+
+
+
+
+
+
 </script>
 
 
@@ -241,6 +390,9 @@ border-color: white;}
 </div>
 </header>
 
+
+
+
   <textarea name="ask" placeholder="What's your question?"></textarea>
 <br><br>
  <button type="submit" class="btn btn-primary" id="submit" style="margin-left: 30%; width: 40%; background-color:#0093BC ;"><a href="rmain.html">Submit</a></button>
@@ -250,7 +402,11 @@ border-color: white;}
 
   <h2> Question</h2>
  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+<p id="count">100</p>
+<i class="fa fa-arrow-up" aria-hidden="true" id="plus"></i> 
+<br>
  <div id="demo" class="collapse">
+ <br>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -262,8 +418,14 @@ border-color: white;}
 
   <div id= "question1">
   <h2>Question</h2>
+
   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+  <p id="count1">50</p>
+<i class="fa fa-arrow-up" aria-hidden="true" id="plus1"></i>
+
+  
  <div id="demo1" class="collapse">
+ <br>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -271,10 +433,44 @@ border-color: white;}
 
    
     
-
   </div>
 
- 
+
+   <div id= "question2">
+  <h2>Question</h2>
+
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+  <p id="count2">20</p>
+<i class="fa fa-arrow-up" aria-hidden="true" id="plus2"></i>
+
+  
+ <div id="demo2" class="collapse">
+ <br>
+             
+              </div>
+
+   
+    
+  </div>
+
+   <div id= "question3">
+  <h2>Question</h2>
+
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+  <p id="count3">10</p>
+<i class="fa fa-arrow-up" aria-hidden="true" id="plus3"></i>
+
+  
+ <div id="demo3" class="collapse">
+ <br>
+            
+              </div>
+
+   
+    
+  </div>
+
+
  
 
 
@@ -285,8 +481,6 @@ border-color: white;}
  <li><i class="fa fa-pencil-square-o fa-2x" id="pencil" aria-hidden="true"><a href=""></a></i></li>
  <li> <a href="Reader-qs.html"><i class="fa fa-bell fa-2x" id="bell" aria-hidden="true"> </a> </i></li>
 </div>
-
-
 
 
 

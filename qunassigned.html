@@ -138,7 +138,7 @@ text-align: center;
   background-color: white;
   color: black;
   margin-top: 10px;
-  border-color: #0093bc;
+  border-color: red;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px 5px; 
@@ -159,7 +159,7 @@ text-align: center;
   background-color: white;
   color: black;
   margin-top: 10px;
-  border-color: #0093bc;
+  border-color: red;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px 5px; 
@@ -281,11 +281,6 @@ border-color: white;}
 }
 
 
-
- 
-
-
-
 #plus {
   float: left;
  
@@ -301,6 +296,15 @@ border-color: white;}
 #plus3{
  float: left;
 
+}
+
+#pencil
+{float: right;
+margin-right: 10px;}
+
+#unassigned
+{
+  color: red;
 }
 </style>
 
@@ -398,9 +402,10 @@ $("#plus3").click(function(){
 
 
   <h2> Question</h2>
- <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+ <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8><p id="unassigned">Unassigned</p></button>
 <p id="count">100</p>
 <i class="fa fa-arrow-up" aria-hidden="true" id="plus"></i> 
+<i class="fa fa-pencil-square-o" id="pencil" aria-hidden="true"></i>
 <br>
  <div id="demo" class="collapse">
  <br>
@@ -414,9 +419,10 @@ $("#plus3").click(function(){
   <div id= "question1">
   <h2>Question</h2>
 
-  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8><p id="unassigned">Unassigned</p></button>
   <p id="count1">100</p>
 <i class="fa fa-arrow-up" aria-hidden="true" id="plus1"></i>
+<i class="fa fa-pencil-square-o" id="pencil" aria-hidden="true"></i>
 
   
  <div id="demo1" class="collapse">
@@ -432,9 +438,10 @@ $("#plus3").click(function(){
    <div id= "question2">
   <h2>Question</h2>
 
-  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8><p id="unassigned">Unassigned</p></button>
   <p id="count2">10</p>
 <i class="fa fa-arrow-up" aria-hidden="true" id="plus2"></i>
+<i class="fa fa-pencil-square-o" id="pencil" aria-hidden="true"></i>
 
   
  <div id="demo2" class="collapse">
@@ -449,9 +456,10 @@ $("#plus3").click(function(){
    <div id= "question3">
   <h2>Question</h2>
 
-  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8><p id="unassigned">Unassigned</p></button>
   <p id="count3">10</p>
 <i class="fa fa-arrow-up" aria-hidden="true" id="plus3"></i>
+<i class="fa fa-pencil-square-o" id="pencil" aria-hidden="true"></i>
 
   
  <div id="demo3" class="collapse">
@@ -470,9 +478,9 @@ $("#plus3").click(function(){
 <div class="footer">
   <ul>
 
- <li><i class="fa fa-home fa-2x" id="house" aria-hidden="true"><a href=""> </a> </i></li>
- <li><i class="fa fa-pencil-square-o fa-2x" id="pencil" aria-hidden="true"><a href=""></a></i></li>
- <li> <a href="Reader-qs.html"><i class="fa fa-bell fa-2x" id="bell" aria-hidden="true"> </a> </i></li>
+ <li><a href="rmain.html" style="color: white;"><i class="fa fa-home fa-2x" id="house" aria-hidden="true"> </i></a> </li>
+ <li><a href="qunassigned.html" style="color:white;"><i class="fa fa-pencil-square-o fa-2x" id="pencil" aria-hidden="true"></i></a></li>
+ <li> <a href="Reader-qs.html" style="color: white;"><i class="fa fa-bell fa-2x" id="bell" aria-hidden="true"></i></a></li>
 </div>
 
 

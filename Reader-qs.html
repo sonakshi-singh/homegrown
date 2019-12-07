@@ -55,6 +55,9 @@
   grid-gap: 5px;
   padding: 5px;
 
+
+
+
 }
 
 .grid-container > div {
@@ -72,10 +75,16 @@
   .right {
     width: 100%;
   }
+
+.title {
+  width: 80%;
+    padding: 0;
+
+}
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  .menu, .main, .right, .title {
     width: 100%;
   }
 }
@@ -99,6 +108,7 @@ button {
 }
 body {
   background-color:  white;
+
 }
 
 
@@ -111,11 +121,10 @@ body {
   border-style: solid;
   border-width: 1px;
   border-radius: 5px 5px; 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 15px;
-  padding-right: 15px;
- 
+  padding-right: 15px; 
 }
 
 
@@ -129,8 +138,8 @@ body {
   border-style: solid;
   border-width: 1px;
   border-radius: 5px 5px; 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -144,10 +153,11 @@ body {
   border-style: solid;
   border-width: 1px;
   border-radius: 5px 5px; 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 75px;
 }
 
 #answered {
@@ -172,20 +182,19 @@ body {
   margin-top: 3px;
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-left: 15px;
+  padding-left: 10px;
   border-color: #0093bc;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px 5px; 
+  margin-top: 35px;
+
 }
 
-h6 {
+#question {
 	color: grey;
   
-}
-
-h8 {
-
+  
 }
 
 .btn-primary {
@@ -204,13 +213,155 @@ border-color: white;}
   text-align: left;
 }
 
+#title {
+  text-align: left;
+  margin: 10px;
+}
+
+#item-3 {
+   margin-top: 50%;
+  margin-bottom: 10%;
+}
+
+.btn-outline-none {
+  padding: 0px;
+  margin-bottom: -10px;
+  margin-top: -10px;
+
+}
+
+/*Header and Footer*/ 
+.container-fluid{
+  width: 100%;
+  margin:auto;
+ overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+
+textarea{
+  
+  height: 20%;
+  width: 40%;
+  padding: 10px;
+ 
+  margin-left: 30%;
+  text-align: center;
+font-size: 30px;
+overflow: scroll;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #0093BC;
+  position: fixed;
+  min-height: 50px;
+  width: 100%;
+
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  text-align: right;
+}
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+/* Style the user account menu */
+.topnav a.icon {
+  float: right;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  
+  color: black;
+}
+ion-icon {
+  
+  float: right;
+}
+.dropbtn
+{
+  text-align: right;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0093BC;
+  color: white;
+  text-align: left;
+  min-height: 10%;
+
+}
+
+.footer li
+{ list-style-type: none;
+  display: inline-block;
+  padding-right: 30%;
+  padding-top: 10px;
+  
+  
+}
+
+.dropbtn #agg
+{ margin: 100px;
+ 
+
+}
+.footer ul{padding-left: 20%;}
+
+/* have to add media screen for footer li and question*/
+
+
 </style>
+<script type="text/javascript">
+  
+  function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 
-<body>
 <header>
+<div class="topnav">
+ <a href="#home" class="active"></a>
 
+  <!-- / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="dropbtn" onclick="myFunction()">
+   <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+  </a>
+  <div class="dropdown">
+<div class="dropdown-content">
+  <!-- Navigation links (hidden by default) -->
+  
+  <div id="myLinks">
+    <a href="#about">ABOUT</a>
+    <a href="#stats">STATS</a>
+ 
+  </div>
+  </div>
+  </div>
+</div>
 </header>
+<body>
 <div class="container h-100">
     <div>
       <div class="w-100">
@@ -221,10 +372,12 @@ border-color: white;}
 				  <div>	
 				  <p><img src="user.png" style="width:20px;height:20px;"> Andrew Weiler</p>
 				  </div>
-                  <button type="button" class="btn btn-outline-none text-dark"  data-toggle="modal" data-target="#myModal"><h6>What is your question?<h6>
-                  </button>
-                </div>
+            <button type="button" class="btn btn-outline-none text-dark"  data-toggle="modal" data-target="#myModal">
+              <p id="question">What is your question?<p>
+            </button>  
+        </div>
             </div>
+            <h3 id="title">Your Questions</h3>
             <div id="box1">
               <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"><h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8></button>
               <div id="demo" class="collapse">
@@ -296,5 +449,12 @@ border-color: white;}
       </div>
     </div>
   </div>
+  <div class="footer">
+  <ul>
+
+ <li><i class="fa fa-home fa-2x" id="house" aria-hidden="true"><a href=""> </a> </i></li>
+ <li><i class="fa fa-pencil-square-o fa-2x" id="pencil" aria-hidden="true"><a href=""></a></i></li>
+ <li> <a href="Reader-qs.html"><i class="fa fa-bell fa-2x" id="bell" aria-hidden="true"> </a> </i></li>
+</div>
 </body>
 </html>

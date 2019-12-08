@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>main</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   
+<style type="text/css">
+  
+.container-fluid{
+  width: 100%;
+  margin:auto;
+ 
+  padding: 0;
+  position: relative;
+}
+header{
+  color: #0093BC;
+   overflow:hidden;
+ min-height: 50%;
+ width:100%;
+
+
+}
+
+textarea{
+  
+  height: 20%;
+  width: 40%;
+  padding: 10px;
+ 
+  margin-left: 30%;
+  text-align: center;
+font-size: 30px;
+overflow: scroll;
+margin-top: 50px;
+
+}
+.topnav {
+  overflow: hidden;
+  background-color: #0093BC;
+  position: fixed;
+  min-height: 50px;
+  width: 100%;
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  text-align: right;
+}
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+/* Style the user account menu */
+.topnav a.icon {
+  float: right;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  
+  color: black;
+}
+ion-icon {
+  
+  float: right;
+}
+.dropbtn
+{
+  text-align: right;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0093BC;
+  color: white;
+  text-align: left;
+  min-height: 10%;
+
+}
+
+.footer li
+{ list-style-type: none;
+  display: inline-block;
+  padding-right: 30%;
+  padding-top: 10px;
+  
+
+
+  
+}
+
+.dropbtn #agg
+{ margin: 100px;
+ 
+
+
+
+
+}
+.footer ul{padding-left: 20%;}
+
+/* have to add media screen for footer li and question*/
+
+
+div .question 
+{   
+   
+    width: 40%;
+margin-left: 30%;
+text-align: center;
+  background-color: white;
+  color: black;
+  margin-top: 60px;
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px; 
+
+ 
+
+}
+
+div #question1 
+{   
+   
+    width: 40%;
+margin-left: 30%;
+text-align: center;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px; 
+ 
+ 
+
+}
+
+div #question2 
+{
+ width: 40%;
+margin-left: 30%;
+text-align: center;
+  background-color: white ;
+  color: black;
+  margin-top: 10px;
+  border-color:red;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px; 
+  
+ 
+
+}
+
+div #question3 
+{
+ width: 40%;
+margin-left: 30%;
+text-align: center;
+  background-color: white ;
+  color: black;
+  margin-top: 10px;
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 10px; 
+  margin-bottom: 130px;
+
+
+}
+
+.btn-primary #submit
+{
+
+margin-left: 30%;
+width: 40%;
+
+}
+.btn-primary {
+  background-color: white;
+  border-color: white;
+  color: black;
+  text-align: center;
+  
+  
+}
+
+.btn-primary:hover { 
+background-color: white;
+color:black; 
+border-color: white;}
+
+#demo,#demo1,#demo2 {
+  text-align: left;
+}
+
+
+
+
+
+#count {
+ 
+ 
+  
+  font-size: 10px;
+  float: left;
+  
+  
+}
+#count1 {
+  
+  
+ 
+
+  font-size: 10px;
+  float: left;
+  
+  
+}
+#count2 {
+  
+  
+ 
+
+  font-size: 10px;
+  float: left;
+  
+  
+}
+#count3 {
+  
+  
+ 
+
+  font-size: 10px;
+  float: left;
+  
+  
+}
+
+
+#plus {
+  float: left;
+ 
+}
+#plus1{
+ float: left;
+
+}
+#plus2{
+ float: left;
+
+}
+#plus3{
+ float: left;
+
+}
+
+#pencil
+{float: right;
+margin-right: 10px;}
+
+#unassigned
+{
+  color: red;
+}
+
+#quiz-prompt {
+  border-style: none;
+  float: right;
+  margin: -10px;
+}
+
+/* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+]
+
+#quiz-1, #quiz-2, #quiz-3 {
+  z-index: 1
+
+}
+
+#learn {
+  padding: 10px;
+  float: right;
+}
+
+.modal-content {
+  padding: 10px;
+
+}
+
+#terms {
+  max-height: 450px;
+  overflow: scroll;
+}
+
+</style>
+
+
+
+
+
+
+<script type="text/javascript">
+  
+  function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+$(function(){
+var counter = 100;
+
+$("#plus").click(function(){
+  counter++;
+  $("#count").text(counter);
+});
+});
+
+$(function(){
+var counter1 = 100;
+
+$("#plus1").click(function(){
+  counter1++;
+  $("#count1").text(counter1);
+});
+});
+
+$(function(){
+var counter2 = 10;
+
+$("#plus2").click(function(){
+  counter2++;
+  $("#count2").text(counter2);
+});
+});
+
+$(function(){
+var counter3 =10 ;
+
+$("#plus3").click(function(){
+  counter3++;
+  $("#count3").text(counter3);
+});
+});
+
+
+
+
+</script>
+
+
+</head>
+<body>
+<div class="container-fluid">
+<header>
+
+<div class="topnav">
+ <a href="#home" class="active"></a>
+
+  <!-- / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="dropbtn" onclick="myFunction()">
+   <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+  </a>
+  <div class="dropdown">
+<div class="dropdown-content">
+  <!-- Navigation links (hidden by default) -->
+  
+  <div id="myLinks">
+    <a href="#about">ABOUT</a>
+    <a href="#stats">STATS</a>
+ 
+  </div>
+  </div>
+  </div>
+</div>
+</header>
+
+
+
+
+  
+ <div class="question">
+
+
+  <h2> </h2>
+ <h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8><p id="unassigned">Unassigned</p>
+<p id="count">100</p>
+<i class="fa fa-arrow-up" aria-hidden="true" id="plus"></i> 
+<button id="quiz-prompt" type="button" class="btn btn-outline-none text-dark"  data-toggle="modal" data-target="#myModal">
+  <p id="question"><i class="fa fa-pencil-square-o" id="pencil" aria-hidden="true"></i><p>
+</button>
+
+<br>
+ <div id="demo" class="collapse">
+ <br>
+             
+              </div>
+
+  
+
+  </div>
+
+  <div id= "question1">
+  <h2></h2>
+
+  <h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8><p id="unassigned">Unassigned</p>
+  <p id="count1">100</p>
+<i class="fa fa-arrow-up" aria-hidden="true" id="plus1"></i>
+<button id="quiz-prompt" type="button" class="btn btn-outline-none text-dark"  data-toggle="modal" data-target="#myModal">
+  <p id="question"><i class="fa fa-pencil-square-o" id="pencil" aria-hidden="true"></i><p>
+</button>
+
+  
+ <div id="demo1" class="collapse">
+ <br>
+              
+              </div>
+
+   
+    
+  </div>
+
+
+   <div id= "question2">
+  <h2></h2>
+
+ <h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8><p id="unassigned">Unassigned</p>
+  <p id="count2">10</p>
+<i class="fa fa-arrow-up" aria-hidden="true" id="plus2"></i>
+<button id="quiz-prompt" type="button" class="btn btn-outline-none text-dark"  data-toggle="modal" data-target="#myModal">
+  <p id="question"><i class="fa fa-pencil-square-o" id="pencil" aria-hidden="true"></i><p>
+</button>
+
+  
+ <div id="demo2" class="collapse">
+ <br>
+             
+              </div>
+
+   
+    
+  </div>
+
+   <div id= "question3">
+  <h2></h2>
+
+  <h8><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></h8><p id="unassigned">Unassigned</p>
+  <p id="count3">10</p>
+<i class="fa fa-arrow-up" aria-hidden="true" id="plus3"></i>
+<button id="quiz-prompt" type="button" class="btn btn-outline-none text-dark"  data-toggle="modal" data-target="#myModal">
+  <p id="question"><i class="fa fa-pencil-square-o" id="pencil" aria-hidden="true"></i><p>
+</button>
+
+  
+ <div id="demo3" class="collapse">
+ <br>
+            
+              </div>
+
+   
+    
+  </div>
+
+
+ 
+
+
+<div class="footer">
+  <ul>
+
+ <li><a href="rmain.html" style="color: white;"><i class="fa fa-home fa-2x" id="house" aria-hidden="true"> </i></a> </li>
+ <li><a href="qunassigned.html" style="color:white;"><i class="fa fa-pencil-square-o fa-2x" id="pencil" aria-hidden="true"></i></a></li>
+ <li> <a href="Reader-qs.html" style="color: white;"><i class="fa fa-bell fa-2x" id="bell" aria-hidden="true"></i></a></li>
+</div>
+<!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div>
+          <h4 class="modal-title">Before you begin...</h4>
+        </div>
+        
+        
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <br/>
+          
+        </div>
+        <div id="learn">
+          <p> (1/2) Learn the basics of reporting by watching this quick video:</p>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div id="video">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/TT9xIdKgOW8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+        <!-- Modal footer -->
+        <div id="submit-question-border" class="modal-footer">
+         
+           <button id="quiz-prompt" type="button" class="btn btn-primary close" data-dismiss="modal" data-toggle="modal" data-target="#miModal">Next</button>
+        </div>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="modal fade" id="miModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Terms of Service</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div id="terms" class="modal-body">
+          <h6>An Introduction to Quora’s Terms of Service</h6>
+          <br/>
+          <p>Welcome to Quora! Here is a quick summary of the highlights of our Terms of Service:</p>
+          <ul>
+            <li>Our mission is to share and grow the world’s knowledge. The Quora platform offers a place to ask questions and connect with people who contribute unique insights and quality answers. This empowers people to learn from each other and to better understand the world.</li>
+            <li>You own the content that you post; you also grant us and other users of the Quora platform certain rights and license to use it. The details of these licenses are described in section 3(c) below.</li>
+            <li>You are responsible for the content that you post. This includes ensuring that you have the rights needed for you to post that content and that your content does not violate the legal rights of another party (for example, defamation) or any applicable laws.</li>
+            <li>You agree to follow the rules of our platform. When you use the Quora platform, you also agree to our Terms of Service, accept our Privacy Policy, and agree to follow our Acceptable Use Policy, Copyright Policy, and Trademark Policy.</li>
+            <li>We offer tools for you to give feedback and report complaints. If you think someone has violated your intellectual property rights, other laws, or Quora's policies, you can initiate a report at the contact us portal or by using our in-product reporting tool.</li>
+        </div>
+        <!-- Modal footer -->
+        <div id="submit-question-border" class="modal-footer">
+         
+           
+           <button type="button" class="close" data-dismiss="modal">Agree to terms</button>
+        </div>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

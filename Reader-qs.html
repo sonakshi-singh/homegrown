@@ -34,6 +34,30 @@
    
 <style type="text/css">
 
+  label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+
+#submit-question {
+  background-color: #0093BC;
+  color: white;
+ 
+}
+
+ #upload {
+  padding: 10px;
+  float: left;
+  position: relative;
+ } 
+
+
 .gallery {
 -webkit-column-count: 3;
 -moz-column-count: 3;
@@ -534,19 +558,34 @@ ion-icon {
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
+          <h4 class="modal-title">What's your question?</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
-          Modal body..
+          <form>
+            <div class="form-group">
+              <label for="usr"></label>
+              <input type="text" class="form-control" id="usr">
+            </div>
+          </form>
+        </div>
+        <!-- Modal footer -->
+        <div id="submit-question-border" class="modal-footer">
+         
+           <button id="submit-question" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        </div>
+        <div id="upload">
+          <label for="avatar">Upload a file:</label>
+
+          <input type="file"
+         id="avatar" name="avatar"
+         accept="image/png, image/jpeg, image/pdf">
+        </div>
         </div>
         
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
+        
         
       </div>
     </div>

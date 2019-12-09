@@ -53,38 +53,65 @@ overflow: scroll;
 margin-top: 50px;
 
 }
+
+
 .topnav {
   overflow: hidden;
   background-color: #0093BC;
   position: relative; 
-   border-bottom: solid black;
+  min-height: 10%;
+  width: 100%;
+ 
 }
 /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-  text-align: right;
-}
+
 /* Style navigation menu links */
-.topnav a {
+.topnav li {
   color: black;
-  
+  list-style-type: none;
+  display: inline-block;
   text-decoration: none;
   font-size: 16px;
-  display: block;
-}
-/* Style the user account menu */
-.topnav a.icon {
-  float: right;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
+  padding-right: 22%;
+  padding-top: 10px;
+
   
-  color: black;
 }
+
+
+
+@media only screen 
+  and (max-width: 500px) 
+  {
+  /* For mobile phones: */
+  .topnav {
+  overflow: hidden;
+  background-color: #0093BC;
+  position: relative; 
+  min-height: 10%;
+  width: 100%;
+ 
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+/* Style navigation menu links */
+.topnav li {
+  color: black;
+  list-style-type: none;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  padding-right: 15.5%;
+  padding-top: 10px; 
+ 
+ 
+
+}
+
+
+}
+
+/* Style the user account menu */
 ion-icon {
   
   float: right;
@@ -93,40 +120,7 @@ ion-icon {
 {
   text-align: right;
 }
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #0093BC;
-  color: white;
-  text-align: left;
-  min-height: 10%;
 
-}
-
-.footer li
-{ list-style-type: none;
-  display: inline-block;
-  padding-right: 30%;
-  padding-top: 10px;
-  
-
-
-  
-}
-
-.dropbtn #agg
-{ margin: 100px;
- 
-
-
-
-
-}
-.footer ul{padding-left: 20%;}
-
-/* have to add media screen for footer li and question*/
 
 
 div #question 

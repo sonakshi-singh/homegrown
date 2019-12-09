@@ -298,40 +298,64 @@ overflow: scroll;
 
 }
 
+
 .topnav {
   overflow: hidden;
   background-color: #0093BC;
-  position: fixed;
-  min-height: 50px;
+  position: relative; 
+  min-height: 10%;
   width: 100%;
-
+ 
 }
 /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-  text-align: right;
-}
+
 /* Style navigation menu links */
-.topnav a {
+.topnav li {
   color: black;
-  
+  list-style-type: none;
+  display: inline-block;
   text-decoration: none;
   font-size: 16px;
-  display: block;
-}
-/* Style the user account menu */
-.topnav a.icon {
-  float: right;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
+  padding-right: 22%;
+  padding-top: 10px;
+
   
-  color: black;
 }
+
+
+
+@media only screen 
+  and (max-width: 500px) 
+  {
+  /* For mobile phones: */
+  .topnav {
+  overflow: hidden;
+  background-color: #0093BC;
+  position: relative; 
+  min-height: 10%;
+  width: 100%;
+ 
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+/* Style navigation menu links */
+.topnav li {
+  color: black;
+  list-style-type: none;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  padding-right: 15.5%;
+  padding-top: 10px; 
+ 
+ 
+
+}
+
+
+}
+
+
 ion-icon {
   
   float: right;
@@ -340,70 +364,28 @@ ion-icon {
 {
   text-align: right;
 }
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #0093BC;
-  color: white;
-  text-align: left;
-  min-height: 10%;
 
-}
-
-.footer li
-{ list-style-type: none;
-  display: inline-block;
-  padding-right: 30%;
-  padding-top: 10px;
-  
-  
-}
-
-.dropbtn #agg
-{ margin: 100px;
- 
-
-}
-.footer ul{padding-left: 20%;}
-
-/* have to add media screen for footer li and question*/
 
 
 </style>
 <script type="text/javascript">
   
-  function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+  
 </script>
 
 
 <header>
 <div class="topnav">
- <a href="#home" class="active"></a>
+  <ul>
 
-  <!-- / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="dropbtn" onclick="myFunction()">
-   <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
-  </a>
-  <div class="dropdown">
-<div class="dropdown-content">
-  <!-- Navigation links (hidden by default) -->
-  
-  <div id="myLinks">
-    <a href="#about">ABOUT</a>
-    <a href="#stats">STATS</a>
+ <li><a href="rmain.html" style="color: white;"><i class="fa fa-home fa-2x" id="house" aria-hidden="true"> </i></a> </li>
+ <li><a href="qunassigned.html" style="color: white;"><i class="fa fa-pencil-square-o fa-2x" id="pencil" aria-hidden="true"></i></a></li>
+ <li> <a href="Reader-qs.html" style="color: white;"><i class="fa fa-bell fa-2x" id="bell" aria-hidden="true">  </i></a></li>
+ <li><a href="" style="color: white;"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></a></li>
+
+ </ul>
  
-  </div>
-  </div>
-  </div>
+  
 </div>
 </header>
 <body>
@@ -551,12 +533,6 @@ ion-icon {
       </div>
     </div>
   </div>
-  <div class="footer">
-  <ul>
-
- <li><i class="fa fa-home fa-2x" id="house" aria-hidden="true"><a href=""> </a> </i></li>
- <li><i class="fa fa-pencil-square-o fa-2x" id="pencil" aria-hidden="true"><a href=""></a></i></li>
- <li> <a href="Reader-qs.html"><i class="fa fa-bell fa-2x" id="bell" aria-hidden="true"> </a> </i></li>
-</div>
+  
 </body>
 </html>

@@ -40,17 +40,21 @@ header{
 
 }
 
-textarea{
-  
-  height: 20%;
+#compose {
   width: 80%;
-  padding: 10px;
- 
   margin-left: 10%;
-  text-align: center;
-font-size: 30px;
-overflow: scroll;
-margin-top: 50px;
+  background-color: white;
+  color: black;
+min-height: 10%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  border-color: #0093bc;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  margin-top: 35px;
+
 
 }
 
@@ -300,6 +304,14 @@ border-color: white;}
  float: left;
 
 }
+
+.btn-outline-none {
+  padding: 0px;
+  
+  width: 80%;
+
+
+}
 </style>
 
 
@@ -378,12 +390,20 @@ $("#plus3").click(function(){
 </div>
 </header>
 
+ <div id="compose">
+          <div> 
+          <p><img src="user.png" style="width:20px;height:20px;"> Andrew Weiler</p>
+          </div>
+            <button type="button" class="btn btn-outline-none text-dark"  data-toggle="modal" data-target="#myModal">
+              <p id="question" style="border-color: white; margin-left: 20%;">What is your question?</p>
+            </button>  
+        </div>
+            
 
 
 
-  <textarea name="ask" placeholder="What's your question?"></textarea>
 <br><br>
- <button type="submit" class="btn btn-primary" id="submit" style="margin-left: 10%; width: 80%; background-color:#0093BC ;"><a href="rmain.html">Submit</a></button>
+ 
 
  <div id="question">
 
@@ -465,11 +485,50 @@ With fewer existing homes to sell, the solution was simple -- build more homes. 
  <br>
             
               </div>
+              </div>
+
+
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">What's your question?</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="usr"></label>
+              <input type="text" class="form-control" id="usr">
+            </div>
+          </form>
+        </div>
+        <!-- Modal footer -->
+        <div id="submit-question-border" class="modal-footer">
+         
+           <button id="submit-question" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        </div>
+        <div id="upload">
+          <label for="avatar">Upload a file:</label>
+
+          <input type="file"
+         id="avatar" name="avatar"
+         accept="image/png, image/jpeg, image/pdf">
+        </div>
+        </div>
+        
+        
+        
+      </div>
+    </div>
 
    
-    
-  </div>
-
+  
 
  
 

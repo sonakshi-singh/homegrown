@@ -155,10 +155,10 @@ ion-icon {
 
 div #question 
 {   
-   
-    width: 80%;
-margin-left: 10%;
-text-align: center;
+  margin-top: 10px;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
   background-color: white;
   color: black;
  
@@ -332,7 +332,23 @@ border-color: white;}
   
   width: 80%;
 
+p #answered {
+  color: green;
+  text-align: center;
+}
 
+p #in-progress {
+  color: orange;
+  text-align: center; 
+}
+
+p #unassigned {
+  color: red;
+  text-align: center;
+}
+
+#title {
+  float: right;
 }
 </style>
 
@@ -417,16 +433,14 @@ $("#plus3").click(function(){
               <p id="question-5">What is your question?</p>
             </button>  
         </div>
-            
+           
+<h3>Your Feed</h3>
 
-
-
-<br><br>
- 
 
  <div id="question">
  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"><h8><b>If the tech bubble pops, will house prices in the San Francisco Bay Area also pop?</b><p>By Andrew Weiler</p></h8></button>
  <br>
+   
 <p id="count">100</p>
 <i class="fa fa-arrow-up" aria-hidden="true" id="plus"></i> 
 <br>
@@ -439,7 +453,7 @@ SF Opera and SF Symphony are among the best in the country. For sports fans, the
 The 2017 Napa wildfires were a catastrophe and probably a decent test case of what would happen in the event of a catastrophe I the Bay Area because Napa county is quite close, north of SF and Marin County. Parts of the city of Santa Rosa (Sonoma County, actually next to Napa) were devastated. You’d think people would be fleeing Napa/Sonoma in droves. Not so. News sources here report that area rents are going up exponentially as people who live there compete with an influx of construction workers for the remaining housing stock.
               </div>
 
-  
+
 
   </div>
 
@@ -447,7 +461,7 @@ The 2017 Napa wildfires were a catastrophe and probably a decent test case of wh
 
   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1"><h8><b>When will Bay Area housing become more affordable?</b><p>By Andrew Weiler</p></h8></button>
   <br>
-
+ 
   <p id="count1">50</p>
 <i class="fa fa-arrow-up" aria-hidden="true" id="plus1"></i>
 
@@ -473,6 +487,7 @@ With fewer existing homes to sell, the solution was simple -- build more homes. 
 
   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2"><h8><b>How do non-STEM people afford housing in the Bay Area?</b><p>By Andrew Weiler</p></h8></button>
   <br>
+  
   <p id="count2">20</p>
 <i class="fa fa-arrow-up" aria-hidden="true" id="plus2"></i>
 
@@ -490,6 +505,7 @@ With fewer existing homes to sell, the solution was simple -- build more homes. 
 
   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3"><h8><b>When is the next home Mules game?</b><p>By Andrew Weiler</p></h8></button>
   <br>
+  
   <p id="count3">10</p>
 <i class="fa fa-arrow-up" aria-hidden="true" id="plus3"></i>
 
